@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div *ngIf="!question">
+      <div class="animation"></div>
+      <div class="animation2"></div>
+
+      <div class="page">
+        <div class="imgCover"></div>
+        <div class="content">
+          <header-app></header-app>
+
+          <h1 class="titre">Importance du</h1>
+          <h3 class="sous-titre">Réseau Professionnel</h3>
+
+          <div class="d-flex justify-content-between">
+            <p class="para">
+              En somme, les réseaux professionnels sont essentiels pour établir
+              des relations significatives, trouver des opportunités, rester
+              informé et évoluer professionnellement dans un monde du travail de
+              plus en plus connecté. Cultiver et entretenir ces réseaux peut
+              grandement bénéficier à votre carrière et à votre développement
+              personnel.
+            </p>
+            <span></span>
+          </div>
+
+          <div class="realisateurs">
+            <ul></ul>
+          </div>
+
+          <div class="succession">
+            <button (click)="precedent()">precedent</button>
+            <button (click)="suivant()">suivant</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="question">
+      <div class="question">
+        <p>
+          Quelle est l'importance du Réseau dans le monde porfessionnel actuel ?
+        </p>
+
+        <button (click)="onRepond()" class="btn-reponse">la reponse</button>
+      </div>
+
+      <div class="questionMarks container">
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+        <img src="/assets/images/questionMark.png" />
+      </div>
+    </div>
+  </body>
+</html>

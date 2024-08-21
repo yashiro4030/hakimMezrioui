@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="animation"></div>
+    <div class="animation2"></div>
+    <div class="page">
+      <div class="imgCover"></div>
+
+      <div class="outils">
+        <div (click)="showExplication('linkdin')" class="outil">
+          <img src="/assets/images/linkdin.png" />
+          <div>
+            <p>
+              LinkedIn est un outil puissant pour établir des connexions
+              professionnelles, rechercher des opportunités de carrière,
+              partager des connaissances et des idées
+            </p>
+          </div>
+        </div>
+
+        <div (click)="showExplication('github')" class="outil">
+          <img src="/assets/images/github.png" />
+          <div>
+            <p>
+              GitHub est bien plus qu'un simple service d'hébergement de code.
+              C'est une plateforme complète qui facilite la collaboration, la
+              gestion de projet et la contribution à des projets logiciels
+            </p>
+          </div>
+        </div>
+
+        <div (click)="showExplication('kaggle')" class="outil">
+          <img src="/assets/images/kaggle.png" />
+          <div>
+            <p>
+              Kaggle est une plateforme complète qui offre des opportunités pour
+              résoudre des problèmes réels, explorer des données, développer des
+              compétences en science des données
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <header-app></header-app>
+
+        <h1 class="titre">Les outils du</h1>
+        <h1 class="sous-titre">Réseau Professionnel</h1>
+
+        <div
+          *ngIf="choiceSelected === 'para'"
+          class="d-flex justify-content-between"
+        >
+          <span></span>
+          <p class="para">
+            Ces outils constituent une variété de ressources et de plateformes
+            qui aident à établir, entretenir et développer un réseau
+            professionnel, à collaborer avec d'autres professionnels, à échanger
+            des idées et à trouver des opportunités dans le monde du travail
+            moderne.
+          </p>
+        </div>
+
+        <div class="video" *ngIf="choiceSelected === 'kaggle'">
+          <span></span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TNzDMOg_zsw?si=Ur9WwI_-LPSm0R_3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video" *ngIf="choiceSelected === 'github'">
+          <span></span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wIeaJmXnVr8?si=dXtXDqfsjZ-cdQtl"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video" *ngIf="choiceSelected === 'linkdin'">
+          <span></span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3UZbJ5jdpa8?si=6PwhTOJ6XWJ7oLHI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="succession">
+          <button (click)="precedent()">precedent</button>
+          <button (click)="suivant()">suivant</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

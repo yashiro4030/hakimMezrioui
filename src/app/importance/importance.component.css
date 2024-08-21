@@ -1,0 +1,273 @@
+.page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgCover {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/assets/images/important.jpg");
+    transform: skewX(-10deg) translateX(10em);
+    background-size: 150% 120%;
+    background-position: center;
+    animation: imgCoverAnimatedImportance 2s ease-out forwards;
+}
+
+@keyframes imgCoverAnimatedImportance {
+    0% {
+        right: -40em;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    text-align: left;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-top: .5em;
+    animation: titreAnimatedImportance 2s ease forwards;
+}
+
+
+@keyframes titreAnimatedImportance {
+    0% {
+        left: -5em;
+    }
+    
+    100% {
+        left: .3em;
+    }
+}
+.sous-titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    text-align: left;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-bottom: .5em;
+    animation: sousTitreAnimatedImportance 2s ease forwards;
+}
+
+@keyframes sousTitreAnimatedImportance {
+    0% {
+        left: -5em;
+    }
+
+    100% {
+        left: 2em;
+    }
+}
+
+.content {
+    width: 50%;
+}
+
+.para {
+    position: relative;
+    left: -30em;
+    font-size: 1.3 em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1em;
+    background-color: white;
+    padding: 1em;
+    text-align: justify;
+    width: 30em;
+    animation: paraAnimatedImportance 3s .5s ease forwards;
+}
+
+@keyframes paraAnimatedImportance {
+    0% {
+        left: -30em;
+    }
+
+    100% {
+        left: 2em;
+    }
+}
+
+.succession {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.succession button:nth-child(2) {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: .5em 3em;
+    border-radius: 1em;
+    z-index: 1;
+    border: none;
+}
+
+.succession button:nth-child(1) {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: .5em 3em;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.animation {
+    position: absolute;
+    width: 3em;
+    height: 30em;
+    background-color: rgb(142, 255, 255);
+    left: 10em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsImportance 1.5s ease alternate infinite;
+}
+
+.animation2 {
+    position: absolute;
+    width: 3em;
+    height: 40em;
+    background: linear-gradient(rgb(142, 255, 255), rgb(227, 255, 255));
+    left: 17em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsImportance .9s ease alternate infinite;
+}
+
+@keyframes animationsImportance {
+    0% {
+        top: -7em;
+    }
+
+    100% {
+        top: -2em;
+    }
+}
+
+
+/* ----------- question marks ----------- */
+
+.question {
+    height: 100vh;
+}
+
+.question p {
+    position: relative;
+    transform: translate(8em, 10em);
+    font-family: itliano;
+    background: lightblue;
+    width: 20em;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.btn-reponse {
+    background-color: transparent;
+    border: none;
+    padding: .7em 3em;
+    border-radius: .5;
+    color: rgb(102, 191, 220);
+    text-shadow: 0 10px 10px black;
+    font-size: 2em;
+    transform: translate(8em, 7em);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.btn-reponse:hover {
+    
+}
+
+.questionMarks img:nth-child(1) {
+    position: absolute;
+    right: 5em;
+    width: 150px;
+    top: 0;
+    animation: questionMarksAnimatedImportance 2s ease alternate infinite;
+}
+.questionMarks img:nth-child(2) {
+    position: absolute;
+    right: 18em;
+    top: 4em;
+    width: 100px;
+    animation: questionMarksAnimatedImportance 1.5s ease alternate infinite;
+}
+.questionMarks img:nth-child(3) {
+    position: absolute;
+    right: 10em;
+    top: 15em;
+    width: 200px;
+    animation: questionMarksAnimatedImportance 3s ease alternate infinite;
+}
+.questionMarks img:nth-child(4) {
+    position: absolute;
+    right: 4em;
+    top: 25em;
+    width: 90px;
+    animation: questionMarksAnimatedImportance 3s ease alternate infinite;
+}
+.questionMarks img:nth-child(5) {
+    position: absolute;
+    right: 25em;
+    top: 28em;
+    width: 130px;
+    animation: questionMarksAnimatedImportance 5s ease alternate infinite; 
+}
+.questionMarks img:nth-child(6) {
+    position: absolute;
+    right: 10em;
+    top: 33em;
+    width: 80px;
+    animation: questionMarksAnimatedImportance 6s ease alternate infinite;
+}
+.questionMarks img:nth-child(7) {
+    position: absolute;
+    right: 23em;
+    top: 15em;
+    width: 140px;
+    animation: questionMarksAnimatedImportance 9s ease alternate infinite;
+}
+.questionMarks img:nth-child(8) {
+    position: absolute;
+    right: 19em;
+    top: 30em;
+    width: 70px;
+    animation: questionMarksAnimatedImportance 5s ease alternate infinite;
+}
+.questionMarks img:nth-child(9) {
+    position: absolute;
+    right: 29em;
+    top: 4em;
+    width: 80px;
+    animation: questionMarksAnimatedImportance 5s ease alternate infinite;
+}
+.questionMarks img:nth-child(10) {
+    position: absolute;
+    right: 23em;
+    top: 15em;
+    width: 140px;
+    animation: questionMarksAnimatedImportance 9s ease alternate infinite;
+}
+
+@keyframes questionMarksAnimatedImportance {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(5em);        
+    }
+}

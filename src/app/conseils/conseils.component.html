@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="animation"></div>
+    <div class="animation2"></div>
+    <div class="page">
+      <div class="imgCover"></div>
+      <div class="content">
+        <div class="d-flex justify-content-between ps-5">
+          <header-app></header-app>
+          <span></span>
+        </div>
+
+        <h1 class="titre">Conseils du</h1>
+        <h3 class="sous-titre">Réseau Professionnel</h3>
+
+        <div class="d-flex justify-content-between">
+          <span></span>
+          <p class="para">
+            Participer à un réseau professionnel peut être bénéfique pour le
+            développement de votre carrière. Voici quelques conseils pour
+            maximiser votre expérience dans un réseau professionnel
+          </p>
+          <!-- <span></span> -->
+        </div>
+
+        <div class="container">
+          <div class="lamps">
+            <img class="lamp lampOn" src="/assets/images/lightLamp2.png" />
+            <img class="lamp lampOff" src="/assets/images/lampOff.png" />
+          </div>
+
+          <div class="conseils">
+            <!-- <div class="conseil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="backConseil"></div>
+              </div> -->
+            <div class="conseil">
+              <p>
+                Réseaux Sociaux Professionnels : Utilisez des sites comme
+                LinkedIn pour montrer aux autres ce que vous savez faire.
+              </p>
+              <div class="backConseil"></div>
+            </div>
+            <div class="conseil">
+              <p>
+                Participer à des Événements : Aller à des conférences ou des
+                salons peut aider à rencontrer de nouvelles personnes.
+              </p>
+              <div class="backConseil"></div>
+            </div>
+            <div class="conseil">
+              <p>
+                Avoir un Mentor : Trouver quelqu'un de plus expérimenté pour
+                vous conseiller peut être très utile.
+              </p>
+              <div class="backConseil"></div>
+            </div>
+            <div class="conseil">
+              <p>
+                Être Actif et Sympa : participez aux discussions, partagez ce
+                que vous savez, et soyez une personne positive.
+              </p>
+              <div class="backConseil"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="succession">
+          <button (click)="precedent()">precedent</button>
+          <button (click)="suivant()">suivant</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

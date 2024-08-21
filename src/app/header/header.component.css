@@ -1,0 +1,29 @@
+.links {
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 1em;
+    gap: 3em;
+    justify-content: center;
+    list-style: none;
+    z-index: 1;
+    margin: 0;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.links li {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.header {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    z-index: 1;
+}

@@ -1,0 +1,216 @@
+.page {
+    /* display: flex; */
+}
+
+.imgCover {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("/assets/images/objectifs.jpg");
+    transform: skewY(-3deg);
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 0;
+    animation: imgCoverAnimatedObjectifs 2s ease-out forwards;
+}
+
+@keyframes imgCoverAnimatedObjectifs {
+    0% {
+        top: -40em;
+    }
+
+    100% {
+        top: -10em;
+    }
+}
+
+.titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    text-align: left;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-top: .5em;
+    animation: titreAnimatedObjectifs 2s ease forwards;
+}
+
+@keyframes titreAnimatedObjectifs {
+    0% {
+        left: -5em;
+    }
+
+    100% {
+        left: .3em;
+    }
+}
+
+.sous-titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    text-align: left;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    left: -10em;
+    margin-bottom: .5em;
+    animation: sousTitreAnimatedObjectifs 2s .5s ease forwards;
+}
+
+@keyframes sousTitreAnimatedObjectifs {
+    0% {
+        left: -10em;
+    }
+
+    100% {
+        left: 2em;
+    }
+}
+
+.content {
+    /* width: 50%; */
+}
+
+.para {
+    position: relative;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1em;
+    background-color: white;
+    padding: 1em;
+    text-align: justify;
+    width: 30em;
+    animation: paraAnimatedObjectifs 3s ease forwards;
+}
+
+@keyframes paraAnimatedObjectifs {
+    0% {
+        right: -30em;
+    }
+
+    100% {
+        right: 2em;
+    }
+}
+
+.succession {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    margin-block: 3em;
+}
+
+.succession button:nth-child(2) {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: .5em 3em;
+    border-radius: 1em;
+    z-index: 1;
+    border: none;
+}
+
+.succession button:nth-child(1) {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: .5em 3em;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.animation {
+    position: absolute;
+    width: 3em;
+    height: 30em;
+    background-color: rgb(142, 255, 255);
+    right: 10em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsObjectifs 1.5s ease alternate infinite;
+}
+
+.animation2 {
+    position: absolute;
+    width: 3em;
+    height: 40em;
+    background: linear-gradient(rgb(142, 255, 255), rgb(227, 255, 255));
+    right: 17em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsObjectifs .9s ease alternate infinite;
+}
+
+@keyframes animationsObjectifs {
+    0% {
+        top: -7em;
+    }
+
+    100% {
+        top: -2em;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 5em;
+}
+
+.objectif {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    transform: scale(4) translateX(.2em);
+    color: rgb(0, 162, 255);
+    background-color: white;
+    padding: .25em .7em;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.objectif span {
+    background-color: rgb(49, 180, 255);
+    padding: .7em 3em;
+    padding-left: 8em;
+    width: 40em;
+    margin-block: 1em;
+    z-index: 1;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.objectif:nth-child(1) {
+    transform: translateX(-10em) scale(.8);
+}
+
+.objectif:nth-child(2) {
+    transform: translateX(-5em) scale(.8);
+}
+
+.objectif:nth-child(3) {
+    transform: scale(.8);
+}
+
+.objectif:nth-child(4) {
+    transform: translateX(-5em) scale(.8);
+}
+
+.objectif p {
+    padding-left: 1.5em;
+}
+
+.objectif h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}

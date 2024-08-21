@@ -1,0 +1,132 @@
+.page {
+    display: flex;
+}
+
+.imgCover {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/assets/images/homme-affaires.jpg");
+    transform: skewX(10deg) translateX(-10em);
+    background-size: 100% 100%;
+    background-position: center;
+    animation: imgCoverAnimatedPlan 2s ease-out forwards;
+}
+
+@keyframes imgCoverAnimatedPlan {
+    0% {
+        left: -40em;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    text-align: right;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-top: .4em;
+    margin-bottom: .3em;
+    animation: titreAnimatedPlan 2s ease forwards;
+}
+
+@keyframes titreAnimatedPlan {
+    0% {
+        right: -5em;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.content {
+    width: 50%;
+}
+
+.para {
+    position: relative;
+    right: -40em;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 1em;
+    text-align: justify;
+    width: 40em;
+    animation: paraAnimatedIntroduction 3s 1s ease forwards;
+}
+
+@keyframes paraAnimatedIntroduction {
+    0% {
+        right: -40em;
+    }
+
+    100% {
+        right: 2em;
+    }
+}
+
+.succession {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.succession button:nth-child(2) {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: .5em 3em;
+    border-radius: 1em;
+    z-index: 1;
+    border: none;
+}
+
+.succession button:nth-child(1) {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: .5em 3em;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.animation {
+    position: absolute;
+    width: 3em;
+    height: 30em;
+    background-color: rgb(142, 255, 255);
+    right: 10em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsPlan 1.5s ease alternate infinite;
+}
+
+.animation2 {
+    position: absolute;
+    width: 3em;
+    height: 40em;
+    background: linear-gradient(rgb(142, 255, 255), rgb(227, 255, 255));
+    right: 17em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsPlan .9s ease alternate infinite;
+}
+
+@keyframes animationsPlan {
+    0% {
+        top: -7em;
+    }
+
+    100% {
+        top: -2em;
+    }
+}

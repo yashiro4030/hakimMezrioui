@@ -1,0 +1,219 @@
+.page {
+    display: flex;
+}
+
+.imgCover {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/assets/images/outils.jpg");
+    transform: skewX(-10deg) translateX(-10em);
+    background-size: 120% 100%;
+    background-position: center;
+    animation: imgCoverAnimatedOutils 2s ease-out forwards;
+}
+
+@keyframes imgCoverAnimatedOutils {
+    0% {
+        left: -40em;
+    }
+
+    100% {
+        left: -8em;
+    }
+}
+
+.titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    text-align: right;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    /* margin-block: .5em; */
+    animation: titreAnimatedOutils 2s ease forwards;
+}
+
+@keyframes titreAnimatedOutils {
+    0% {
+        right: -5em;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.sous-titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    text-align: right;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-bottom: .5em;
+    animation: sousTitreAnimatedOutils 2s ease forwards;
+}
+
+@keyframes sousTitreAnimatedOutils {
+    0% {
+        right: 5em;
+    }
+
+    100% {
+        right: .5em;
+    }
+}
+
+.content {
+    width: 50%;
+}
+
+.para {
+    position: relative;
+    right: -33em;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1em;
+    background-color: white;
+    padding: 1em;
+    margin-right: 2em;
+    text-align: justify;
+    width: 30em;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    animation: paraAnimatedOutils 3s 1s ease forwards;
+}
+
+@keyframes paraAnimatedOutils {
+    0% {
+        right: -33em;
+    }
+
+    100% {
+        right: 2em;
+    }
+}
+
+.succession {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.succession button:nth-child(2) {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: .5em 3em;
+    border-radius: 1em;
+    z-index: 1;
+    border: none;
+}
+
+.succession button:nth-child(1) {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: .5em 3em;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.animation {
+    position: absolute;
+    width: 3em;
+    height: 30em;
+    background-color: rgb(142, 255, 255);
+    right: 10em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsOutils 1.5s ease alternate infinite;
+}
+
+.animation2 {
+    position: absolute;
+    width: 3em;
+    height: 40em;
+    background: linear-gradient(rgb(142, 255, 255), rgb(227, 255, 255));
+    right: 17em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsOutils .9s ease alternate infinite;
+}
+
+@keyframes animationsOutils {
+    0% {
+        top: -7em;
+    }
+
+    100% {
+        top: -2em;
+    }
+}
+
+.outils {
+    position: absolute;
+    left: 30%;
+    top: 12em;
+    opacity: 0;
+    animation: outilskeyframesOutils 1s 2s ease forwards;
+}
+
+@keyframes outilskeyframesOutils {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.outil {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.outil img {
+    width: 70px;
+    /* background-color: white; */
+}
+
+.outil p {
+    width: 25em;
+    background: rgb(114, 177, 198);
+    padding: 1em;
+    text-align: justify;
+    border-radius: .5em;
+    color: white;
+}
+
+.outil:nth-child(1) {
+    transform: translateX();
+}
+
+.outil:nth-child(2) {
+    transform: translateX(-1.5em);
+}
+
+.outil:nth-child(3) {
+    transform: translateX(-2.5em);
+}
+
+.video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.video iframe {
+    z-index: 1;
+}

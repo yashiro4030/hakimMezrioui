@@ -1,0 +1,134 @@
+.page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgCover {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/assets/images/handSheck.jpeg");
+    transform: skewX(-10deg) translateX(10em);
+    background-size: 100% 100%;
+    background-position: center;
+    animation: imgCoverAnimatedImportance 2s ease-out forwards;
+}
+
+@keyframes imgCoverAnimatedImportance {
+    0% {
+        right: -40em;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.titre {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    text-align: left;
+    margin-right: .3em;
+    color: rgb(77, 77, 77);
+    background-color: transparent;
+    position: relative;
+    margin-block: .5em;
+    animation: titreAnimatedImportance 2s ease forwards;
+}
+
+
+@keyframes titreAnimatedImportance {
+    0% {
+        left: -5em;
+    }
+    
+    100% {
+        left: .3em;
+    }
+}
+
+.content {
+    width: 50%;
+}
+
+.para {
+    position: relative;
+    left: -30em;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: 1em;
+    background-color: white;
+    padding: 1em;
+    text-align: justify;
+    width: 30em;
+    animation: paraAnimatedImportance 3s .5s ease forwards;
+}
+
+@keyframes paraAnimatedImportance {
+    0% {
+        left: -30em;
+    }
+
+    100% {
+        left: 2em;
+    }
+}
+
+.succession {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.succession button:nth-child(2) {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: .5em 3em;
+    border-radius: 1em;
+    z-index: 1;
+    border: none;
+}
+
+.succession button:nth-child(1) {
+    background-color: rgb(206, 206, 206);
+    color: white;
+    padding: .5em 3em;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.animation {
+    position: absolute;
+    width: 3em;
+    height: 30em;
+    background-color: rgb(142, 255, 255);
+    left: 10em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsConclusion 1.5s ease alternate infinite;
+}
+
+.animation2 {
+    position: absolute;
+    width: 3em;
+    height: 40em;
+    background: linear-gradient(rgb(142, 255, 255), rgb(227, 255, 255));
+    left: 17em;
+    top: -2em;
+    transform: rotate(10deg);
+    z-index: 0;
+    animation: animationsConclusion .9s ease alternate infinite;
+}
+
+@keyframes animationsConclusion {
+    0% {
+        top: -7em;
+    }
+
+    100% {
+        top: -2em;
+    }
+}
